@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+@font-face {
+  font-family: "Allenoire";
+  src: url("../src/assets/fonts/Allenoire-Font.otf");
+ }

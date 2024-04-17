@@ -4,6 +4,7 @@ import '../styles/home.css'
 import Spinner from '../assets/navbar-rotator.png';
 import HotelBookingForm from '../components/BookingForm';
 import BackgroundSlider from '../components/imageSlider';
+import BottomBar from '../components/bottomBar';
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ const HomePage = () => {
         <HotelBookingForm />
       </div>
       <BackgroundSlider />
+      <BottomBar />
     </div>
   );
 };

@@ -64,6 +64,7 @@ function HotelBookingForm() {
             onChange={handleChange}
             className="form-control guests"
           >
+            <option value="" disabled selected>Guests</option>
             {[...Array(10).keys()].map((num) => (
               <option key={num + 1} value={num + 1}>
                 {num + 1}

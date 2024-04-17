@@ -7,15 +7,18 @@ import Image3 from '../assets/homeimg3.jpg';
 const slides = [
   {
     image: Image1,
-    text: 'Welcome to Slide 1',
+    text: 'Himachal',
+    para: "Discover breathtaking landscapes and serene beauty in Himachal's majestic mountains."
   },
   {
     image: Image2,
-    text: 'This is Slide 2',
+    text: 'Kerala',
+    para: "Escape to Kerala's tranquil backwaters and lush greenery for a rejuvenating retreat."
   },
   {
     image: Image3,
-    text: 'Slide 3 here',
+    text: 'Ayodhya',
+    para: "Embark on a spiritual journey to Ayodhya, the sacred city of ancient temples."
   },
   // Add more slides as needed
 ];
@@ -44,7 +47,10 @@ function BackgroundSlider() {
             className={index === currentSlideIndex ? 'slide active' : 'slide'}
             style={{ backgroundImage: `url(${slide.image})` }}
           >
-            <div className="slide-text">{slide.text}</div>
+            <div className="slide-text">
+                {slide.text}
+                <p className='slide-para'>{slide.para}</p>
+            </div>
           </div>
         ))}
         <button className="prev" onClick={goToPrevSlide}>&#10094;</button>
